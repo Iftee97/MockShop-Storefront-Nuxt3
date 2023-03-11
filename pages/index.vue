@@ -1,7 +1,7 @@
 <template>
   <main>
     <h1 class="text-3xl text-gray-700 text-center font-bold mb-8">
-      MockShop Storefront
+      MockShop Storefront Nuxt3
     </h1>
     <div>
       <ul class="my-6 grid grid-cols-4 gap-4 list-none">
