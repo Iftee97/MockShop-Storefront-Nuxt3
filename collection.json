@@ -1,0 +1,61 @@
+[
+  {
+    "node": {
+      "id": "gid://shopify/Collection/432524493120",
+      "handle": "apparel",
+      "title": "Apparel",
+      "image": {
+        "src": "https://cdn.shopify.com/s/files/1/0703/2586/2720/collections/apparel.jpg?v=1672823457"
+      },
+      "products": {
+        "edges": []
+      }
+    }
+  },
+  {
+    "node": {
+      "id": "gid://shopify/Collection/432524558656",
+      "handle": "home-and-garden",
+      "title": "Home and Garden",
+      "image": {
+        "src": "https://cdn.shopify.com/s/files/1/0703/2586/2720/collections/home-and-garden.jpg?v=1672823621"
+      },
+      "products": {
+        "edges": []
+      }
+    }
+  },
+  {
+    "node": {
+      "id": "gid://shopify/Collection/432524755264",
+      "handle": "jewelry",
+      "title": "Jewelry",
+      "image": {
+        "src": "https://cdn.shopify.com/s/files/1/0703/2586/2720/collections/jewelry.webp?v=1672823755"
+      },
+      "products": {
+        "edges": []
+      }
+    }
+  },
+  {
+    "node": {
+      "id": "gid://shopify/Collection/436053508416",
+      "handle": "canvases",
+      "title": "Canvases",
+      "image": {
+        "src": "https://cdn.shopify.com/s/files/1/0703/2586/2720/collections/qwik-example.png?v=1675084736"
+      },
+      "products": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/Product/8128041091392",
+              "title": "Canvas 0"
+            }
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "id": "gid://shopify/Collection/436053508416",
+  "handle": "canvases",
+  "title": "Canvases",
+  "image": {
+    "src": "https://cdn.shopify.com/s/files/1/0703/2586/2720/collections/qwik-example.png?v=1675084736",
+    "altText": null
+  },
+  "products": {
+    "edges": [
+      {
+        "node": {
+          "id": "gid://shopify/Product/8128041091392",
+          "title": "Canvas 0",
+          "handle": "canvas-0",
+          "featuredImage": {
+            "id": "gid://shopify/ProductImage/40434334892352",
+            "url": "https://cdn.shopify.com/s/files/1/0703/2586/2720/products/AIDesignCanvasBackground2.jpg?v=1675326504"
+          },
+          "images": {
+            "edges": [
+              {
+                "node": {
+                  "src": "https://cdn.shopify.com/s/files/1/0703/2586/2720/products/AIDesignCanvasBackground2.jpg?v=1675326504",
+                  "altText": null
+                }
+              },
+              {
+                "node": {
+                  "src": "https://cdn.shopify.com/s/files/1/0703/2586/2720/products/AIDesignCanvasBackgroundNew.jpg?v=1676438225",
+                  "altText": null
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
