@@ -1,0 +1,59 @@
+{
+  "data": {
+    "product": {
+      "id": "gid://shopify/Product/7982905098262",
+      "title": "Men's Crewneck",
+      "description": "This high-quality crewneck is perfect for your everyday look. Made with 100% cotton, it's soft, comfortable, and undeniably stylish. Full sleeved for a classic look and effortlessly versatile, this cotton crewneck is a must-have in any wardrobe.",
+      "featuredImage": {
+        "id": "gid://shopify/ProductImage/39774600855574",
+        "url": "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/GreenMenscrew01.jpg?v=1675454919"
+      },
+      "variants": {
+        "edges": [
+          {
+            "cursor": "eyJsYXN0X2lkIjo0MzY5NjkwNTIyNDIxNCwibGFzdF92YWx1ZSI6MX0=",
+            "node": {
+              "id": "gid://shopify/ProductVariant/43696905224214",
+              "title": "Small / Green",
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/GreenMenscrew01.jpg?v=1675454919"
+              },
+              "price": {
+                "amount": "120.0",
+                "currencyCode": "CAD"
+              }
+            }
+          },
+          {
+            "cursor": "eyJsYXN0X2lkIjo0MzY5NTg0ODEyODUzNCwibGFzdF92YWx1ZSI6Mn0=",
+            "node": {
+              "id": "gid://shopify/ProductVariant/43695848128534",
+              "title": "Small / Olive",
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/ClayMenscrew01.jpg?v=1675455641"
+              },
+              "price": {
+                "amount": "120.0",
+                "currencyCode": "CAD"
+              }
+            }
+          },
+          {
+            "cursor": "eyJsYXN0X2lkIjo0MzY5NjkwNTI1Njk4MiwibGFzdF92YWx1ZSI6M30=",
+            "node": {
+              "id": "gid://shopify/ProductVariant/43696905256982",
+              "title": "Small / Ocean",
+              "image": {
+                "url": "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/OceanMenscrew01.jpg?v=1675455641"
+              },
+              "price": {
+                "amount": "120.0",
+                "currencyCode": "CAD"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

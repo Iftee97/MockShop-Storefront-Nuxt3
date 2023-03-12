@@ -107,6 +107,73 @@ export async function getCollectionByHandle(handle) {
   return collection
 }
 
+export async function getProducts() {
+  const query = `{
+    products(first: 250) {
+      edges {
+        node {
+          id
+          title
+          handle
+          description
+          tags
+          priceRange {
+             minVariantPrice {
+               amount
+            }
+          }
+          featuredImage {
+            id
+            url
+          }
+          images(first: 5) {
+              edges {
+                node {
+                  url
+                  altText
+                }
+              }
+            }
+          options {
+            name
+            values
+            id
+          }
+          variants(first: 3) {
+            edges {
+              node {
+                id
+                title
+                availableForSale
+                selectedOptions {
+                  name
+                  value
+                }
+                image {
+                  url
+                  altText
+                }
+                price {
+                  amount
+                  currencyCode
+                }
+                compareAtPrice {
+                  amount
+                  currencyCode
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }`
+
+  const response = await ShopifyData(query)
+  const allProducts = response.data.products.edges ? response.data.products.edges : []
+  return allProducts
+}
+
 export async function getProductByHandle(handle) {
   const query = `{
     product(handle: "${handle}") {
