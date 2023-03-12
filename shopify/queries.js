@@ -182,6 +182,12 @@ export async function getProductByHandle(handle) {
       handle
       description
       tags
+      collections(first: 100) {
+        nodes {
+          id
+          title
+        }
+      }
       featuredImage {
         id
         url
