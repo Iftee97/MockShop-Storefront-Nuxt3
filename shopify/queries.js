@@ -117,9 +117,15 @@ export async function getProducts() {
           handle
           description
           tags
+          collections(first: 100) {
+            nodes {
+              id
+              title
+            }
+          }
           priceRange {
-             minVariantPrice {
-               amount
+            minVariantPrice {
+              amount
             }
           }
           featuredImage {
@@ -127,13 +133,13 @@ export async function getProducts() {
             url
           }
           images(first: 5) {
-              edges {
-                node {
-                  url
-                  altText
-                }
+            edges {
+              node {
+                url
+                altText
               }
             }
+          }
           options {
             name
             values

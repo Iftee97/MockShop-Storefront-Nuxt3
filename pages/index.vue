@@ -55,5 +55,5 @@ fetchedThings.value = {
   categories: categories.value,
   users: users.value
 }
-console.log('fetchedThings', fetchedThings.value)
+// console.log('fetchedThings', fetchedThings.value)
 </script>
