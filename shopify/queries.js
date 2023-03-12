@@ -132,7 +132,7 @@ export async function getProducts() {
             id
             url
           }
-          images(first: 5) {
+          images(first: 100) {
             edges {
               node {
                 url
@@ -145,7 +145,7 @@ export async function getProducts() {
             values
             id
           }
-          variants(first: 3) {
+          variants(first: 100) {
             edges {
               node {
                 id
@@ -198,7 +198,7 @@ export async function getProductByHandle(handle) {
         id
         url
       }
-      images(first: 5) {
+      images(first: 100) {
         edges {
           node {
             url
@@ -211,7 +211,7 @@ export async function getProductByHandle(handle) {
         values
         id
       }
-      variants(first: 25) {
+      variants(first: 100) {
         edges {
           node {
             id
