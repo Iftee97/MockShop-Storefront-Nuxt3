@@ -106,3 +106,61 @@ export async function getCollectionByHandle(handle) {
   const collection = response.data.collection ? response.data.collection : []
   return collection
 }
+
+export async function getProductByHandle(handle) {
+  const query = `{
+    product(handle: "${handle}") {
+      id
+      title
+      handle
+      description
+      tags
+      featuredImage {
+        id
+        url
+      }
+      images(first: 5) {
+        edges {
+          node {
+            url
+            altText
+          }
+        }
+      }
+      options {
+        name
+        values
+        id
+      }
+      variants(first: 25) {
+        edges {
+          node {
+            id
+            title
+            availableForSale
+            selectedOptions {
+              name
+              value
+            }
+            image {
+              url
+              altText
+            }
+            price {
+              amount
+              currencyCode
+            }
+            compareAtPrice {
+              amount
+              currencyCode
+            }
+          }
+        }
+      }
+    }
+  }`
+
+  const response = await ShopifyData(query)
+  const product = response.data.product ? response.data.product : []
+  return product
+}

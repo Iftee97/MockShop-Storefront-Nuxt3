@@ -31,6 +31,17 @@ import {
   getCollections
 } from '@/shopify/queries'
 
+useHead({
+  title: 'Home | MockShop Storefront',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: 'MockShop Storefront Nuxt3'
+    }
+  ]
+})
+
 const fetchedThings = ref({}) // purely for testing reasons
 
 const { data: collections } = await useAsyncData('collections', () => getCollections())

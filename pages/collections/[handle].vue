@@ -1,15 +1,9 @@
 <template>
   <div>
-    <!-- <div class="mb-8">
-      {{ collection }}
-    </div> -->
-    <h1 class="text-3xl text-center text-gray-700 mb-8">
-      <span class="font-light">
-        handle:
-      </span>
-      <span class="font-bold">
-        {{ collection.title }}
-      </span>
+    <!-- {{ route }} -->
+    <!-- {{ collection }} -->
+    <h1 class="text-3xl text-center text-gray-700 font-bold mb-8">
+      {{ collection.title }}
     </h1>
     <div class="grid grid-cols-3 gap-4 items-center">
       <div 
@@ -44,8 +38,18 @@
 
 <script setup>
 import { getCollectionByHandle } from '@/shopify/queries'
-
 const route = useRoute()
+
+useHead({
+  title: `${route.params.handle} | MockShop Storefront`,
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: 'Collection Page'
+    }
+  ]
+})
 
 const { data: collection } = await useAsyncData('collection', () => getCollectionByHandle(route.params.handle))
 </script>

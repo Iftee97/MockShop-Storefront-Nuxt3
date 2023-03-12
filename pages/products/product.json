@@ -1,0 +1,146 @@
+{
+  "id": "gid://shopify/Product/8128041091392",
+  "title": "Canvas 0",
+  "handle": "canvas-0",
+  "description": "Bring Your Imagination to Life and Create Your own Master Piece! Printed on high quality, artist grade stock and folded around a lightweight frame to give them a gorgeous, gallery ready appearance. With acid free ink that will last without fading or chipping, Features a scratch-resistant UV coating. Wipes clean easily with a damp cloth or to remove dust, vacuum gently using a soft brush attachment.",
+  "tags": [
+    "canvas",
+    "position-t60-l60-h350-w350"
+  ],
+  "featuredImage": {
+    "id": "gid://shopify/ProductImage/40434334892352",
+    "url": "https://cdn.shopify.com/s/files/1/0703/2586/2720/products/AIDesignCanvasBackground2.jpg?v=1675326504"
+  },
+  "images": {
+    "edges": [
+      {
+        "node": {
+          "url": "https://cdn.shopify.com/s/files/1/0703/2586/2720/products/AIDesignCanvasBackground2.jpg?v=1675326504",
+          "altText": null
+        }
+      },
+      {
+        "node": {
+          "url": "https://cdn.shopify.com/s/files/1/0703/2586/2720/products/AIDesignCanvasBackgroundNew.jpg?v=1676438225",
+          "altText": null
+        }
+      }
+    ]
+  },
+  "options": [
+    {
+      "name": "Size",
+      "values": [
+        "10x10″",
+        "16x16″",
+        "18x18″",
+        "24x24″"
+      ],
+      "id": "gid://shopify/ProductOption/10322029019456"
+    }
+  ],
+  "variants": {
+    "edges": [
+      {
+        "node": {
+          "id": "gid://shopify/ProductVariant/44409691767104",
+          "title": "10x10″",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Size",
+              "value": "10x10″"
+            }
+          ],
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/0703/2586/2720/products/AIDesignCanvasBackground2.jpg?v=1675326504",
+            "altText": null
+          },
+          "price": {
+            "amount": "500.0",
+            "currencyCode": "BDT"
+          },
+          "compareAtPrice": {
+            "amount": "800.0",
+            "currencyCode": "BDT"
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/ProductVariant/44409691799872",
+          "title": "16x16″",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Size",
+              "value": "16x16″"
+            }
+          ],
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/0703/2586/2720/products/AIDesignCanvasBackground2.jpg?v=1675326504",
+            "altText": null
+          },
+          "price": {
+            "amount": "500.0",
+            "currencyCode": "BDT"
+          },
+          "compareAtPrice": {
+            "amount": "800.0",
+            "currencyCode": "BDT"
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/ProductVariant/44465440096576",
+          "title": "18x18″",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Size",
+              "value": "18x18″"
+            }
+          ],
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/0703/2586/2720/products/AIDesignCanvasBackground2.jpg?v=1675326504",
+            "altText": null
+          },
+          "price": {
+            "amount": "500.0",
+            "currencyCode": "BDT"
+          },
+          "compareAtPrice": {
+            "amount": "800.0",
+            "currencyCode": "BDT"
+          }
+        }
+      },
+      {
+        "node": {
+          "id": "gid://shopify/ProductVariant/44409691832640",
+          "title": "24x24″",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Size",
+              "value": "24x24″"
+            }
+          ],
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/0703/2586/2720/products/AIDesignCanvasBackground2.jpg?v=1675326504",
+            "altText": null
+          },
+          "price": {
+            "amount": "500.0",
+            "currencyCode": "BDT"
+          },
+          "compareAtPrice": {
+            "amount": "800.0",
+            "currencyCode": "BDT"
+          }
+        }
+      }
+    ]
+  }
+}
