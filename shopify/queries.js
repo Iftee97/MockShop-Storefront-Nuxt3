@@ -17,13 +17,15 @@ export async function getFakeStoreUsers() {
 }
 
 async function ShopifyData(query) {
-  const URL = `https://new-store-458.myshopify.com/api/2022-10/graphql.json` // test store's shopify store domain
+  // const URL = `https://new-store-458.myshopify.com/api/2022-10/graphql.json` // test store's shopify store domain
+  const URL = `https://mock-store-001.myshopify.com/api/2022-10/graphql.json` // test store's shopify store domain
 
   const options = {
     endpoint: URL,
     method: "POST",
     headers: {
-      "X-Shopify-Storefront-Access-Token": '646b8a7bec666c4c872a76bfbf10b720', // test store's storefront access token
+      // "X-Shopify-Storefront-Access-Token": '646b8a7bec666c4c872a76bfbf10b720', // test store's storefront access token
+      "X-Shopify-Storefront-Access-Token": '743b8a38358be73b67cc78d3dbf57275', // test store's storefront access token
       "Accept": "application/json",
       "Content-Type": "application/json",
     },
@@ -105,4 +107,141 @@ export async function getCollectionByHandle(handle) {
   const response = await ShopifyData(query)
   const collection = response.data.collection ? response.data.collection : []
   return collection
+}
+
+export async function getProducts() {
+  const query = `{
+    products(first: 250) {
+      edges {
+        node {
+          id
+          title
+          handle
+          description
+          tags
+          collections(first: 100) {
+            nodes {
+              id
+              title
+            }
+          }
+          priceRange {
+            minVariantPrice {
+              amount
+            }
+          }
+          featuredImage {
+            id
+            url
+          }
+          images(first: 100) {
+            edges {
+              node {
+                url
+                altText
+              }
+            }
+          }
+          options {
+            name
+            values
+            id
+          }
+          variants(first: 100) {
+            edges {
+              node {
+                id
+                title
+                availableForSale
+                selectedOptions {
+                  name
+                  value
+                }
+                image {
+                  url
+                  altText
+                }
+                price {
+                  amount
+                  currencyCode
+                }
+                compareAtPrice {
+                  amount
+                  currencyCode
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }`
+
+  const response = await ShopifyData(query)
+  const allProducts = response.data.products.edges ? response.data.products.edges : []
+  return allProducts
+}
+
+export async function getProductByHandle(handle) {
+  const query = `{
+    product(handle: "${handle}") {
+      id
+      title
+      handle
+      description
+      tags
+      collections(first: 100) {
+        nodes {
+          id
+          title
+        }
+      }
+      featuredImage {
+        id
+        url
+      }
+      images(first: 100) {
+        edges {
+          node {
+            url
+            altText
+          }
+        }
+      }
+      options {
+        name
+        values
+        id
+      }
+      variants(first: 100) {
+        edges {
+          node {
+            id
+            title
+            availableForSale
+            selectedOptions {
+              name
+              value
+            }
+            image {
+              url
+              altText
+            }
+            price {
+              amount
+              currencyCode
+            }
+            compareAtPrice {
+              amount
+              currencyCode
+            }
+          }
+        }
+      }
+    }
+  }`
+
+  const response = await ShopifyData(query)
+  const product = response.data.product ? response.data.product : []
+  return product
 }
