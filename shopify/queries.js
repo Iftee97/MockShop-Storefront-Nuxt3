@@ -17,14 +17,12 @@ export async function getFakeStoreUsers() {
 }
 
 async function ShopifyData(query) {
-  // const URL = `https://new-store-458.myshopify.com/api/2022-10/graphql.json` // test store's shopify store domain
   const URL = `https://mock-store-001.myshopify.com/api/2022-10/graphql.json` // test store's shopify store domain
 
   const options = {
     endpoint: URL,
     method: "POST",
     headers: {
-      // "X-Shopify-Storefront-Access-Token": '646b8a7bec666c4c872a76bfbf10b720', // test store's storefront access token
       "X-Shopify-Storefront-Access-Token": '743b8a38358be73b67cc78d3dbf57275', // test store's storefront access token
       "Accept": "application/json",
       "Content-Type": "application/json",
